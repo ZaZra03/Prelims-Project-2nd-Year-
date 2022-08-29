@@ -1,5 +1,4 @@
 public class Pet{
-
 	public String petName;
 	public String petType;
 	public String petBreed;
