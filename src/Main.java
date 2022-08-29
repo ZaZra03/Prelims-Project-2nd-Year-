@@ -4,8 +4,7 @@ public class Main {
 	public static void main(String... args) throws IOException {
 		
 		BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
-		
-		
+				
 		do {
 			System.out.println("WELCOME TO SUMMONERS RIFT");
 			System.out.println();
@@ -141,12 +140,10 @@ public class Main {
 					}
 				
 				else System.out.println("Invalid Input");
-					
-				
-					
+										
 			} 
 			
-			else if(choice1 == 'B' || choice1 == 'b') {			
+			else if (choice1 == 'B' || choice1 == 'b') {			
 				System.out.println("System Exit");	
 				break;
 			} 
