@@ -57,7 +57,7 @@ public class Main {
 		String sex;
 		String ownerName;
 		
-		//asks the user which information do they have on the pet
+		//Asks the user which information do they have on the pet
 		System.out.println("Which information do you have on your Pet?");
 		System.out.println("1) Pet name and type (Dog or Cat)");
 		System.out.println("2) Pet name, type (Dog or Cat), and breed");
@@ -67,17 +67,19 @@ public class Main {
 		System.out.println("6) Pet name, type (Dog or Cat), breed, color, age, sex and owner�s name");
 		System.out.print("Input the number of your command:");
 		
-		//reads the command of the user
+		//Reads the command of the user
 		int command = Integer.parseInt(in.readLine());
 		
-		//selects which scenario happens depending on the informations available
+		//Selects which scenario happens depending on the informations available
 		switch(command) {
+				
 		/*Things the code below does:
 		 * it first looks on which informations the user have on the pet
 		 * it has 6 available outcomes which depends on the information provided
 		 * it gathers those informations and then adds the pet into an array
 		 * which stores up all the pets created
 		 */
+				
 		case 1:
 			System.out.print("Enter the name of your Pet:");
 			name = in.readLine();
@@ -160,8 +162,7 @@ public class Main {
 			ownerName = in.readLine();
 			pets.add(new Pet (name,type,breed,color,age,sex,ownerName));
 			System.out.println("Pet added successfully!");
-			break;
-			
+			break;			
 		}
 	}
 	
@@ -184,9 +185,7 @@ public class Main {
 				pets.get(i).showDetails();
 			}
 			
-			else {
-				System.out.println("Pet Not Found.");
-			}
+			else System.out.println("Pet Not Found.");
 		}
 	}
 }
