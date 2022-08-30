@@ -2,13 +2,6 @@ import java.io.*;
 public class MainProgram {
 
 	public static void main(String... args) throws IOException {
-		String name;
-		String type;
-		String breed;
-		String color;
-		int age;
-		String sex;
-		String ownerName;
 	
 		BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
 				
