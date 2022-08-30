@@ -46,9 +46,6 @@ public class Main {
 						
 						Pet pet2 = new Pet(name, type, breed);
 						pet2.ShowDetails();
-					
-					
-					
 					} 
 				
 				else if(choice2 == '3') {
@@ -65,8 +62,7 @@ public class Main {
 						String color = rd.readLine();
 						
 						Pet pet3 = new Pet(name, type, breed, color);
-						pet3.ShowDetails();
-						
+						pet3.ShowDetails();						
 					} 
 				
 				else if(choice2 == '4') {					
@@ -86,8 +82,7 @@ public class Main {
 						String age = rd.readLine();
 						
 						Pet pet4 = new Pet(name, type, breed, color, age);
-						pet4.ShowDetails();
-						
+						pet4.ShowDetails();						
 					} 
 				
 				else if(choice2 == '5') {
@@ -140,7 +135,7 @@ public class Main {
 					}
 				
 				else System.out.println("Invalid Input");
-										
+				
 			} 
 			
 			else if (choice1 == 'B' || choice1 == 'b') {			
