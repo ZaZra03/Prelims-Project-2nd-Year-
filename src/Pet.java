@@ -1,4 +1,3 @@
-
 public class Pet {	
 	public String name;
 	public String type;
@@ -17,6 +16,7 @@ public class Pet {
 	 * 6) Pet name, type (Dog or Cat), breed, color, age, sex and owner�s name
 	 * Respectively.
 	 */
+	
 	Pet(String name, String type){
 		this.name = name;
 		this.type = type;
