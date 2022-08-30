@@ -1,8 +1,15 @@
 import java.io.*;
-public class Main {
+public class MainProgram {
 
 	public static void main(String... args) throws IOException {
-		
+		String name;
+		String type;
+		String breed;
+		String color;
+		int age;
+		String sex;
+		String ownerName;
+	
 		BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
 				
 		do {
@@ -21,121 +28,124 @@ public class Main {
 				System.out.println("4. Pet Name, Type (Dog or Cat), Breed, Color, and Age");
 				System.out.println("5. Pet Name, Type (Dog or Cat), Breed, Color, Age, and Sex");
 				System.out.println("6. Pet Name, Type (Dog or Cat), Breed, Color, Age, Sex, and Owners Name");				
-				char choice2 = rd.readLine().charAt(0);
+				int command = Integer.parseInt(rd.readLine());
 				
-				if(choice2 == '1') {
-					System.out.println("Enter your pet's name: ");
-					String name = rd.readLine();
-					
-					System.out.println("Enter your pet's type (Dog or Cat): ");
-					String type = rd.readLine();
-					
-					Pet pet1 = new Pet(name, type);
-					pet1.ShowDetails();
-					} 
+				switch (command) {
 				
-				else if(choice2 == '2') {					
+					case 1:
 						System.out.println("Enter your pet's name: ");
-						String name = rd.readLine();
+						String name1 = rd.readLine();
+					
+						System.out.println("Enter your pet's type (Dog or Cat): ");
+						String type1 = rd.readLine();
+					
+						Pet pet = new Pet(name1, type1);
+						pet.showDetails();
+						break;
+						
+					case 2:
+						System.out.println("Enter your pet's name: ");
+						String name2 = rd.readLine();
 						
 						System.out.println("Enter your pet's type (Dog or Cat): ");
-						String type = rd.readLine();
+						String type2 = rd.readLine();
 						
 						System.out.println("Enter your pet's breed:");
-						String breed = rd.readLine();
+						String breed2 = rd.readLine();
 						
-						Pet pet2 = new Pet(name, type, breed);
-						pet2.ShowDetails();
-					} 
-				
-				else if(choice2 == '3') {
+						Pet pet2 = new Pet(name2, type2, breed2);
+						pet2.showDetails();
+						break;
+						
+					case 3:
 						System.out.println("Enter your pet's name: ");
-						String name = rd.readLine();
+						String name3 = rd.readLine();
 						
 						System.out.println("Enter your pet's type (Dog or Cat): ");
-						String type = rd.readLine();
+						String type3 = rd.readLine();
 						
 						System.out.println("Enter your pet's breed:");
-						String breed = rd.readLine();
+						String breed3 = rd.readLine();
 						
 						System.out.println("Enter your pet's Color :");
-						String color = rd.readLine();
+						String color3 = rd.readLine();
 						
-						Pet pet3 = new Pet(name, type, breed, color);
-						pet3.ShowDetails();						
-					} 
-				
-				else if(choice2 == '4') {					
+						Pet pet3 = new Pet(name3, type3, breed3, color3);
+						pet3.showDetails();
+						break;
+						
+					case 4:
 						System.out.println("Enter your pet's name: ");
-						String name = rd.readLine();
+						String name4 = rd.readLine();
 						
 						System.out.println("Enter your pet's type (Dog or Cat): ");
-						String type = rd.readLine();
+						String type4 = rd.readLine();
 						
 						System.out.println("Enter your pet's breed:");
-						String breed = rd.readLine();
+						String breed4 = rd.readLine();
 						
 						System.out.println("Enter your pet's Color :");
-						String color = rd.readLine();
+						String color4 = rd.readLine();
 						
 						System.out.println("Enter your pet's age:");
-						String age = rd.readLine();
+						String age4 = rd.readLine();
 						
-						Pet pet4 = new Pet(name, type, breed, color, age);
-						pet4.ShowDetails();						
-					} 
-				
-				else if(choice2 == '5') {
+						Pet pet4 = new Pet(name4, type4, breed4, color4, age4);
+						pet4.showDetails();
+						break;
+						
+					case 5:
 						System.out.println("Enter your pet's name: ");
-						String name = rd.readLine();
+						String name5 = rd.readLine();
 						
 						System.out.println("Enter your pet's type (Dog or Cat): ");
-						String type = rd.readLine();
+						String type5 = rd.readLine();
 						
 						System.out.println("Enter your pet's breed:");
-						String breed = rd.readLine();
+						String breed5 = rd.readLine();
 						
 						System.out.println("Enter your pet's Color :");
-						String color = rd.readLine();
+						String color5 = rd.readLine();
 						
 						System.out.println("Enter your pet's age:");
-						String age = rd.readLine();
+						String age5 = rd.readLine();
 						
 						System.out.println("Enter your pet's sex: ");
-						String sex = rd.readLine();
+						String sex5 = rd.readLine();
 						
-						Pet pet5 = new Pet(name, type, breed, color, age, sex);
-						pet5.ShowDetails();						
-					} 
-				
-				else if(choice2 == '6') {				
+						Pet pet5 = new Pet(name5, type5, breed5, color5, age5, sex5);
+						pet5.showDetails();
+						break;
+					case 6:
 						System.out.println("Enter your pet's name: ");
-						String name = rd.readLine();
+						String name6 = rd.readLine();
 						
 						System.out.println("Enter your pet's type (Dog or Cat): ");
-						String type = rd.readLine();
+						String type6 = rd.readLine();
 						
 						System.out.println("Enter your pet's breed:");
-						String breed = rd.readLine();
+						String breed6 = rd.readLine();
 						
 						System.out.println("Enter your pet's Color :");
-						String color = rd.readLine();
+						String color6 = rd.readLine();
 						
 						System.out.println("Enter your pet's age:");
-						String age = rd.readLine();
+						String age6 = rd.readLine();
 						
 						System.out.println("Enter your pet's sex: ");
-						String sex = rd.readLine();
+						String sex6 = rd.readLine();
 						
 						System.out.println("Enter the Owners name: ");
-						String petOwnersName = rd.readLine();
+						String petOwnersName6 = rd.readLine();
 						
-						Pet pet6 = new Pet(name, type, breed, color, age, sex, petOwnersName);
-						pet6.ShowDetails();						
-					}
-				
-				else System.out.println("Invalid Input");
-				
+						Pet pet6 = new Pet(name6, type6, breed6, color6, age6, sex6, petOwnersName6);
+						pet6.showDetails();
+						break;
+						
+					default:
+						System.out.println("Invalid Input");
+						
+				}	
 			} 
 			
 			else if (choice1 == 'B' || choice1 == 'b') {			
