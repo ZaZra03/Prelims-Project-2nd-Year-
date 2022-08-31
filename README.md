@@ -5,7 +5,7 @@ Pet  Shop  so  that  records  can  be  collected  and  kept  for  future  use.  
 depending on the preference of the customer. The following are the possibilities upon recording the pet information:
 
   1)Pet name and type (Dog or Cat)
-  /n2)Pet name, type (Dog or Cat), and breed
+  2)Pet name, type (Dog or Cat), and breed
   3)Pet name, type (Dog or Cat), breed, and color
   4)Pet name, type (Dog or Cat), breed, color, and age
   5)Pet name, type (Dog or Cat), breed, color, age and sex
