@@ -9,8 +9,14 @@ public class Main {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {		
 		while(true) {
+			/*
+			 * If there are no pets yet, only the options add pet and 
+			 * exit is available. The find pet option is only shown when there 
+			 * are pets already stored in the program or when the first pet is
+			 * added.
+			 */
 			if(pets.size() == 0) {
-				System.out.println("Welcome to my mothafucking Pet Shop!\n What would you like to do?");
+				System.out.println("Welcome to the Pet Shop!\n What would you like to do?");
 				System.out.println("1. Add Pet"); 
 				System.out.println("2. Exit");
 				System.out.print("Input the number of your command:");
@@ -26,7 +32,7 @@ public class Main {
 					break;
 				}		
 			} else {
-				System.out.println("Welcome to my mothafucking Pet Shop!\n What would you like to do?");
+				System.out.println("Welcome to the Pet Shop!\n What would you like to do?");
 				System.out.println("1. Add Pet"); 
 				System.out.println("2. Find Pet");
 				System.out.println("3. Exit");
@@ -179,7 +185,7 @@ public class Main {
 		
 		for(int i = 0; i<pets.size();i++) {
 			//pets.get(i).name accesses the object in the array list pets using the index i and then it checks the name of that Pet object
-			if(name.equals( pets.get(i).name)) {
+			if(name.equals(pets.get(i).name)) {
 				System.out.println("Your Pet is found, here are their details:");
 				//uses the showDetails method of that Pet object
 				pets.get(i).showDetails();
