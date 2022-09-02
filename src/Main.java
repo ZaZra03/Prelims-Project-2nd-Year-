@@ -171,7 +171,7 @@ public class Main {
 			
 		}
 	}
-	
+
 	static void findPet() throws IOException {
 		System.out.print("Enter the Name of the Pet you are finding (Case Sensitive):");
 		String name = in.readLine();
@@ -195,3 +195,5 @@ public class Main {
 				System.out.println("Pet Not Found.");
 			}
 		}
+	}
+}
