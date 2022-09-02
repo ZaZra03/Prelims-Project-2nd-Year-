@@ -13,7 +13,7 @@ public class Pet {
 	 * 3) Pet name, type (Dog or Cat), breed, and color
 	 * 4) Pet name, type (Dog or Cat), breed, color, and age
 	 * 5) Pet name, type (Dog or Cat), breed, color, age and sex
-	 * 6) Pet name, type (Dog or Cat), breed, color, age, sex and owner�s name
+	 * 6) Pet name, type (Dog or Cat), breed, color, age, sex and owners name
 	 * Respectively.
 	 */
 	
