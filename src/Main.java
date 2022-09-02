@@ -16,7 +16,7 @@ public class Main {
 			 * added.
 			 */
 			if(pets.size() == 0) {
-				System.out.println("Welcome to the Pet Shop!\n What would you like to do?");
+				System.out.println("Welcome to the Pet Shop!\nWhat would you like to do?");
 				System.out.println("1. Add Pet"); 
 				System.out.println("2. Exit");
 				System.out.print("Input the number of your command:");
