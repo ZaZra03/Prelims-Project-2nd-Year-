@@ -1,4 +1,3 @@
-
 public class Pet {	
 	public String name;
 	public String type;
@@ -80,3 +79,4 @@ public class Pet {
 			System.out.println("Pet Owner's Name: "+ownerName);
 		}
 	}
+}
