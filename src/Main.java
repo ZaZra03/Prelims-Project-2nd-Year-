@@ -173,7 +173,7 @@ public class Main {
 	}
 
 	static void findPet() throws IOException {
-		System.out.print("Enter the Name of the Pet you are finding (Case Sensitive):");
+		System.out.print("Enter the Name of the Pet you are finding:");
 		String name = in.readLine();
 		
 		/*
@@ -185,7 +185,7 @@ public class Main {
 		
 		for(int i = 0; i<pets.size();i++) {
 			//pets.get(i).name accesses the object in the array list pets using the index i and then it checks the name of that Pet object
-			if(name.equals(pets.get(i).name)) {
+			if(name.equalsIgnoreCase(pets.get(i).name)) {
 				System.out.println("Your Pet is found, here are their details:");
 				//uses the showDetails method of that Pet object
 				pets.get(i).showDetails();
