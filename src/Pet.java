@@ -17,29 +17,29 @@ public class Pet {
 	 * Respectively.
 	 */
 	
-	Pet(String name, String type){
+	public Pet(String name, String type){
 		this.name = name;
 		this.type = type;
 	}
-	Pet(String name, String type, String breed){
+	public Pet(String name, String type, String breed){
 		this.name = name;
 		this.type = type;
 		this.breed = breed;
 	}
-	Pet(String name, String type, String breed,String color){
+	public Pet(String name, String type, String breed,String color){
 		this.name = name;
 		this.type = type;
 		this.breed = breed;
 		this.color = color;
 	}
-	Pet(String name, String type, String breed,String color, int age){
+	public Pet(String name, String type, String breed,String color, int age){
 		this.name = name;
 		this.type = type;
 		this.breed = breed;
 		this.color = color;
 		this.age = age;
 	}
-	Pet(String name, String type, String breed,String color, int age, String sex){
+	public Pet(String name, String type, String breed,String color, int age, String sex){
 		this.name = name;
 		this.type = type;
 		this.breed = breed;
@@ -47,7 +47,7 @@ public class Pet {
 		this.age = age;
 		this.sex = sex;
 	}
-	Pet(String name, String type, String breed,String color, int age, String sex,String ownerName){
+	public Pet(String name, String type, String breed,String color, int age, String sex,String ownerName){
 		this.name = name;
 		this.type = type;
 		this.breed = breed;
