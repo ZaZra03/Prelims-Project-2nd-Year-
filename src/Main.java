@@ -18,22 +18,8 @@ public class Main {
 				System.out.println("1. Add Pet");
 				System.out.println("2. Exit\n");
 
-				// Uses a while-loop with try-catch statement to make the program accept only
-				// specific answers
-				int command;
-				while (true) {
-					try {
-						System.out.print("Input the number of your command:");
-						command = Integer.parseInt(in.readLine());
-						if (command < 3 && command > 0) {
-							break;
-						} else {
-							throw new Exception();
-						}
-					} catch (Exception e) {
-						System.out.println("Invalid Input. Please try again.\n");
-					}
-				}
+				// Method call for runSelection()
+				int command = runSelection(2);
 
 				switch (command) {
 				case 1:
@@ -50,24 +36,10 @@ public class Main {
 				System.out.println("2. Find Pet");
 				System.out.println("3. Exit\n");
 
-				// Uses a while-loop with try-catch statement to make the program accept only
-				// specific answers
-				int command;
-				while (true) {
-					try {
-						System.out.print("Input the number of your command:");
-						command = Integer.parseInt(in.readLine());
-						if (command < 4 && command > 0) {
-							break;
-						} else {
-							throw new Exception();
-						}
-					} catch (Exception e) {
-						System.out.println("Invalid Input. Please try again.\n");
-					}
-				}
-
-				switch (command) {
+				// Method call for runSelection()
+				int response = runSelection(3);
+				
+				switch (response) {
 				case 1:
 					addPet();
 					break;
@@ -102,22 +74,8 @@ public class Main {
 		System.out.println("5) Pet name, type (Dog or Cat), breed, color, age and sex");
 		System.out.println("6) Pet name, type (Dog or Cat), breed, color, age, sex and owner's name\n");
 
-		// Uses a while-loop with try-catch statement to make the program accept only
-		// specific answers
-		int command;
-		while (true) {
-			try {
-				System.out.print("Input the number of your command:");
-				command = Integer.parseInt(in.readLine());
-				if (command < 7 && command > 0) {
-					break;
-				} else {
-					throw new Exception();
-				}
-			} catch (Exception e) {
-				System.out.println("Invalid Input. Please try again.\n");
-			}
-		}
+		// Method call for runSelection()
+		int response = runSelection(6);
 
 		// Takes advantage of the numeric response to identify which informations are
 		// selected
@@ -131,42 +89,43 @@ public class Main {
 			currentPet = new Pet(name, type);
 		}
 
-		if (command > 1) {
+		if (response > 1) {
 			System.out.print("Enter your pet's breed:");
 			breed = in.readLine();
 
 			currentPet = new Pet(name, type, breed);
 		}
 
-		if (command > 2) {
+		if (response > 2) {
 			System.out.print("Enter your pet's Color :");
 			color = in.readLine();
 
 			currentPet = new Pet(name, type, breed, color);
 		}
-
-		while (true) {
-			try {
-				if (command > 3) {
+		
+		if (response > 3) {
+			while (true) {
+				try {
 					System.out.print("Enter your pet's age:");
 					age = Integer.parseInt(in.readLine());
-		
+
 					currentPet = new Pet(name, type, breed, color, age);
 					break;
+
+				} catch (Exception e) {
+					System.out.println("Invalid input. Please try again!\n");
 				}
-			} catch (Exception e) {
-				System.out.println("Invalid input. Please try again!\n");
 			}
 		}
 		
-		if (command > 4) {
+		if (response > 4) {
 			System.out.print("Enter your pet's sex: ");
 			sex = in.readLine();
 
 			currentPet = new Pet(name, type, breed, color, age, sex);
 		}
 
-		if (command > 5) {
+		if (response > 5) {
 			System.out.print("Enter the Owners name: ");
 			ownerName = in.readLine();
 
@@ -199,5 +158,29 @@ public class Main {
 				System.out.println("Pet Not Found.");
 			}
 		}
+	}
+	
+	/**
+	 * Run a console input command that only accepts values on to how many numbers
+	 * (from 1) are in the selection
+	 */
+	static int runSelection(int numberOfSelection) {
+		// Uses a while-loop with try-catch statement to make the program accept only
+		// specific answers
+		int command;
+		while (true) {
+			try {
+				System.out.print("Input the number of your command:");
+				command = Integer.parseInt(in.readLine());
+				if (command < (numberOfSelection + 1) && command > 0) {
+					break;
+				} else {
+					throw new Exception();
+				}
+			} catch (Exception e) {
+				System.out.println("Invalid Input. Please try again.\n");
+			}
+		}
+		return command;
 	}
 }
