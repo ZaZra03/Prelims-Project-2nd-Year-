@@ -84,14 +84,14 @@ public class Main {
 	}
 
 	static void addPet() throws NumberFormatException, IOException {
-		Pet currentPet = null;
-		String name = null;
-		String type = null;
-		String breed = null;
-		String color = null;
-		int age = 0;
-		String sex = null;
-		String ownerName = null;
+		Pet currentPet;
+		String name;
+		String type;
+		String breed;
+		String color;
+		int age;
+		String sex;
+		String ownerName;
 
 		// Asks the user which information do they have on the pet
 		System.out.println("\nWhich information do you have on your Pet?");
