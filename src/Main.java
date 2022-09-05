@@ -31,7 +31,7 @@ public class Main {
 					break;
 				}
 			} else {
-				System.out.println("\nWelcome to the Pet Shop!\n What would you like to do?");
+				System.out.println("\nWelcome to the Pet Shop!\nWhat would you like to do?");
 				System.out.println("1. Add Pet");
 				System.out.println("2. Find Pet");
 				System.out.println("3. Exit\n");
