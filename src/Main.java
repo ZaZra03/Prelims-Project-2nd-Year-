@@ -77,29 +77,28 @@ public class Main {
 		// Method call for runSelection()
 		int response = runSelection(6);
 
-		// Takes advantage of the numeric response to identify which informations are
-		// selected
-		if (true) {
-			System.out.println();
-			System.out.print("Enter your pet's name: ");
-			name = in.readLine();
-			System.out.print("Enter your pet's type (Dog or Cat): ");
-			type = in.readLine();
+		// Running this block of code for every operation since pet name and
+		// pet type is always needed
+		System.out.println();
+		System.out.print("Enter your pet's name: ");
+		name = in.readLine();
+		System.out.print("Enter your pet's type (Dog or Cat): ");
+		type = in.readLine();
+		// Initialize the currentPet Object
+		currentPet = new Pet(name, type);
 
-			currentPet = new Pet(name, type);
-		}
-
+		// Takes advantage of the numeric response to identify if each additional information is selected
 		if (response > 1) {
 			System.out.print("Enter your pet's breed:");
 			breed = in.readLine();
-
+			// Re-initialize the currentPet Object
 			currentPet = new Pet(name, type, breed);
 		}
 
 		if (response > 2) {
 			System.out.print("Enter your pet's Color :");
 			color = in.readLine();
-
+			// Re-initialize the currentPet Object
 			currentPet = new Pet(name, type, breed, color);
 		}
 		
@@ -108,7 +107,7 @@ public class Main {
 				try {
 					System.out.print("Enter your pet's age:");
 					age = Integer.parseInt(in.readLine());
-
+					// Re-initialize the currentPet Object
 					currentPet = new Pet(name, type, breed, color, age);
 					break;
 
@@ -121,14 +120,14 @@ public class Main {
 		if (response > 4) {
 			System.out.print("Enter your pet's sex: ");
 			sex = in.readLine();
-
+			// Re-initialize the currentPet Object
 			currentPet = new Pet(name, type, breed, color, age, sex);
 		}
 
 		if (response > 5) {
 			System.out.print("Enter the Owners name: ");
 			ownerName = in.readLine();
-
+			// Re-initialize the currentPet Object
 			currentPet = new Pet(name, type, breed, color, age, sex, ownerName);
 		}
 
@@ -165,8 +164,7 @@ public class Main {
 	 * (from 1) are in the selection
 	 */
 	static int runSelection(int numberOfSelection) {
-		// Uses a while-loop with try-catch statement to make the program accept only
-		// specific answers
+		// Uses a while-loop with try-catch statement to make the program accept only specific answers
 		int command;
 		while (true) {
 			try {
@@ -181,6 +179,7 @@ public class Main {
 				System.out.println("Invalid Input. Please try again.\n");
 			}
 		}
+		// Returns the input of the user
 		return command;
 	}
 }
