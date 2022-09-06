@@ -131,7 +131,7 @@ public class Main {
 			currentPet = new Pet(name, type, breed, color, age, sex, ownerName);
 		}
 
-		pets.add(currentPet);
+		pets.add(currentPet);//adds the created Pet object in the arrayList named pets
 		System.out.println("\nPet added successfully!\n");
 	}
 
