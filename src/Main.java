@@ -79,8 +79,7 @@ public class Main {
 
 		// Running this block of code for every operation since pet name and
 		// pet type is always needed
-		System.out.println();
-		System.out.print("Enter your pet's name: ");
+		System.out.print("\nEnter your pet's name: ");
 		name = in.readLine();
 		System.out.print("Enter your pet's type (Dog or Cat): ");
 		type = in.readLine();
