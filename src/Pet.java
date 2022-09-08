@@ -58,7 +58,7 @@ public class Pet {
 	}
 	
 	//Method to show the details the object has
-	public void showDetails() {
+	public void ShowDetails() {
 		//Informations that are not filled in/unavailable is not shown.
 		if(name != null) {
 			System.out.println("Pet name: "+name);
