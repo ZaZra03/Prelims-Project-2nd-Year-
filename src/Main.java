@@ -19,7 +19,7 @@ public class Main {
 				System.out.println("2. Exit\n");
 
 				// Method call for runSelection()
-				int command = runSelection(2);
+				int command = RunSelection(2);
 
 				switch (command) {
 				case 1:
@@ -37,7 +37,7 @@ public class Main {
 				System.out.println("3. Exit\n");
 
 				// Method call for runSelection()
-				int response = runSelection(3);
+				int response = RunSelection(3);
 				
 				switch (response) {
 				case 1:
@@ -75,7 +75,7 @@ public class Main {
 		System.out.println("6) Pet name, type (Dog or Cat), breed, color, age, sex and owner's name\n");
 
 		// Method call for runSelection()
-		int response = runSelection(6);
+		int response = RunSelection(6);
 
 		// Running this block of code for every operation since pet name and
 		// pet type is always needed
@@ -150,7 +150,7 @@ public class Main {
 			if (name.equalsIgnoreCase(pets.get(i).name)) {
 				System.out.println("\nYour Pet is found, here are their details:");
 				// uses the showDetails method of that Pet object
-				pets.get(i).showDetails();
+				pets.get(i).ShowDetails();
 			}
 
 			else {
@@ -163,7 +163,7 @@ public class Main {
 	 * Run a console input command that only accepts values on to how many numbers
 	 * (from 1) are in the selection
 	 */
-	static int runSelection(int numberOfSelection) {
+	static int RunSelection(int numberOfSelection) {
 		// Uses a while-loop with try-catch statement to make the program accept only specific answers
 		int command;
 		while (true) {
