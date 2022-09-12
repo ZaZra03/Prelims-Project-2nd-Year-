@@ -61,22 +61,22 @@ public class Pet {
 	public void ShowDetails() {
 		//Informations that are not filled in/unavailable is not shown.
 		if(name != null) {
-			System.out.println("Pet name: "+name);
+			System.out.println("Pet name: " + this.name);
 		} 
 		if(type != null) {
-			System.out.println("Pet type: "+type);
+			System.out.println("Pet type: " + this.type);
 		} 
 		if(breed != null) {
-			System.out.println("Pet breed: "+breed);	
+			System.out.println("Pet breed: " + this.breed);	
 		}
 		if(color != null) {
-			System.out.println("Pet color: "+color);
+			System.out.println("Pet color: " + this.color);
 		}
 		if(age != 0) {
-			System.out.println("Pet age: "+age+" years");
+			System.out.println("Pet age: " + this.age + " years");
 		}
 		if(ownerName != null) {
-			System.out.println("Pet Owner's Name: "+ownerName);
+			System.out.println("Pet Owner's Name: " + this.ownerName);
 		}
 	}
 }
