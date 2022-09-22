@@ -22,38 +22,23 @@ public class Pet {
 		this.type = type;
 	}
 	public Pet(String name, String type, String breed){
-		this.name = name;
-		this.type = type;
+		this(name,type);
 		this.breed = breed;
 	}
 	public Pet(String name, String type, String breed,String color){
-		this.name = name;
-		this.type = type;
-		this.breed = breed;
+		this(name,type,breed);
 		this.color = color;
 	}
 	public Pet(String name, String type, String breed,String color, int age){
-		this.name = name;
-		this.type = type;
-		this.breed = breed;
-		this.color = color;
+		this(name,type,breed,color);
 		this.age = age;
 	}
 	public Pet(String name, String type, String breed,String color, int age, String sex){
-		this.name = name;
-		this.type = type;
-		this.breed = breed;
-		this.color = color;
-		this.age = age;
+		this(name,type,breed,color,age);
 		this.sex = sex;
 	}
 	public Pet(String name, String type, String breed,String color, int age, String sex,String ownerName){
-		this.name = name;
-		this.type = type;
-		this.breed = breed;
-		this.color = color;
-		this.age = age;
-		this.sex = sex;
+		this(name,type,breed,color,age,sex);
 		this.ownerName = ownerName;
 	}
 	
